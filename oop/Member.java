@@ -6,7 +6,14 @@ public class Member {
    private int level; // not the data type here
    private int rank; // note the data type here as well
 
-   // constructor
+   /**
+    * Contructor for Member class
+    * @param name
+    * @param type
+    * @param level
+    * @param rank 
+    * 
+    */
    public Member(String name, String type, int level, int rank) {
       this.name = name;
       this.type = type;
@@ -14,8 +21,10 @@ public class Member {
       this.rank = rank;
    }
 
-   // getter functions
-   /* retrieve name */
+   /**
+    * Returns the name of the member   
+    * @return name
+    */
    public String getName() {
       return this.name;
    }
