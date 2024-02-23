@@ -1,14 +1,23 @@
-
-import java.util.Scanner;
+import java.util.LinkedList;
 
 public class Practice {
+    static int jewelsInStones(String jewels, String stones) {
+        int count = 0;
+        for (String letter : stones.split("")) {
+            if (jewels.contains(letter)) {
+                count++;
+            }
+        }
+        return count;
+    }
+
 
     public static void main(String[] arg) {
-        Scanner keyboard = new Scanner(System.in);
-        System.out.print("What is your name: ");
-        String name = keyboard.nextLine();
-
+        LinkedList linkedList = new LinkedList<Integer>();
+        linkedList.add(4);
         
-        keyboard.close();
+        String jewels = "aA";
+        String stones = "aaAbbbb";
+        System.out.println(jewelsInStones(jewels, stones));
     }
 }
